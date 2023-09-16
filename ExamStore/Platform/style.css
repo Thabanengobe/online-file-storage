@@ -1,14 +1,30 @@
-p{
-    
-    color: black;
-}
-a{
-    color: inherit;
-}
+nav{
+    display: block;
+    overflow: hidden;
+    background-color: rgba(3, 3, 3, 0.795);
+} 
+
 body{
-    background-color: blueviolet;
-    font-size: 22px;
-    color: aqua;
-    font-style: italic;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(250, 235, 215, 0.466);
+    color: rgba(0, 0, 0, 0.815);
+    margin-right: 12px;
+    font-size: large;
+}
+
+nav a{
+    float:left;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline;
+}
+nav a:hover{
+    color: rgb(134, 221, 221);
+
 }
