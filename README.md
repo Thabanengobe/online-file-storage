@@ -1,4 +1,3 @@
-# online-book-store
+# pdf filehost
 ## Description
-  It's an online book store were you can store your own pdf files that you have dowloaded
-  from other websites so that can read them anytime, anywere and in any pc as long as you are connected to the internet
+  It's pdf filehost web application were you can store your pdf files online
