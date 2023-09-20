@@ -1,0 +1,36 @@
+
+body{
+    background: rgba(2, 2, 2, 0.637);
+    margin-right: 12px;
+    font-size: large;
+}
+
+nav div span{
+    color: rgb(218, 191, 212);
+    text-transform: capitalize;
+    font-style: italic;
+}
+nav div a{
+    float:right;
+    border-spacing: 12px;
+    color: azure;
+    margin-right: 100px;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+}
+
+nav{
+    display: block;
+}
+
+nav div li{
+    display: inline;
+}
+
+nav div a:hover{
+    color: rgb(134, 221, 221);
+    text-decoration: underline;
+    font-size: large;
+}
