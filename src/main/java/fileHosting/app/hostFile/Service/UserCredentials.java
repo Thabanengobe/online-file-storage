@@ -12,16 +12,28 @@ public class UserCredentials {
 
 
     public String logUser(String email, String password) {
-        return null;
+        if(userDao.existsById(email)){
+            return email;
+        }
+        return "failed";
     }
 
-    public String registerUser(String userName, String email,
+    public User registerUser(String userName, String email,
                                String password, String confirmPassword) {
         User user = new User();
-        user.setUserName(userName);
-        user.setEmail(email);
-        user.setPassword(password);
-        userDao.save(user);
-        return null;
+        if(isPasswordValid(password, confirmPassword)){
+
+            user.setUserName(userName);
+            user.setEmail(email);
+            user.setPassword(password);
+            userDao.save(user);
+            return user;
+        }
+
+        return user;
+    }
+
+    private boolean isPasswordValid(String password, String confirmPassword){
+        return password.equals(confirmPassword);
     }
 }
